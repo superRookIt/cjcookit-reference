@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>관리자메인 | 영카트5</title>
+<link rel="stylesheet" href="css/admin_main.css">
+</head>
+<body>
+	<div id="hd_login_msg">
+		영카트5님 로그인 중 <a href="https://demo.sir.kr/gnuboard5/bbs/logout.php">로그아웃</a>
+	</div>
+
+	<header id="hd">
+		<h1>영카트5</h1>
+
+		<div id="hd_top">
+			<button type="button" id="btn_gnb" class="btn_gnb_close ">메뉴</button>
+
+			<div id="logo">
+				<a href="https://demo.sir.kr/gnuboard5/adm/"></a>
+			</div>
+
+			<div id="tnb">
+				<ul>
+					<li class="tnb_li"><a
+						href="https://demo.sir.kr/gnuboard5/shop/" class="tnb_shop"
+						target="_blank" title="쇼핑몰 바로가기">쇼핑몰 바로가기</a></li>
+					<li class="tnb_li"><a href="https://demo.sir.kr/gnuboard5/"
+						class="tnb_community" target="_blank" title="커뮤니티 바로가기">커뮤니티
+							바로가기</a></li>
+					<li class="tnb_li"><a
+						href="https://demo.sir.kr/gnuboard5/adm/service.php"
+						class="tnb_service">부가서비스</a></li>
+					<li class="tnb_li"><button type="button" class="tnb_mb_btn">
+							관리자<span class="./img/btn_gnb.png">메뉴열기</span>
+						</button>
+						<ul class="tnb_mb_area">
+							<li><a
+								href="https://demo.sir.kr/gnuboard5/adm/member_form.php?w=u&amp;mb_id=youngcart5">관리자정보</a></li>
+							<li id="tnb_logout"><a
+								href="https://demo.sir.kr/gnuboard5/bbs/logout.php">로그아웃</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+
+		<nav id="gnb" class="gnb_large ">
+			<h2>관리자 주메뉴</h2>
+			<ul class="gnb_ul">
+				<li class="gnb_li on">
+					<button type="button" class="btn_op menu-100 menu-order-1"
+						title="환경설정">환경설정</button>
+				</li>
+
+				<li class="gnb_li">
+					<button type="button" class="btn_op menu-200 menu-order-2"
+						title="회원관리">회원관리</button>
+				</li>
+
+				<li class="gnb_li">
+					<button type="button" class="btn_op menu-300 menu-order-3"
+						title="게시판관리">게시판관리</button>
+				</li>
+
+
+				<li class="gnb_li">
+					<button type="button" class="btn_op menu-400 menu-order-4"
+						title="쇼핑몰관리">쇼핑몰관리</button>
+				</li>
+
+
+				<li class="gnb_li">
+					<button type="button" class="btn_op menu-500 menu-order-5"
+						title="쇼핑몰현황/기타">쇼핑몰현황/기타</button>
+
+				</li>
+				<li class="gnb_li">
+					<button type="button" class="btn_op menu-900 menu-order-6"
+						title="SMS 관리">SMS 관리</button>
+				</li>
+			</ul>
+
+		</nav>
+
+	</header>
+
+
+	<div id="wrapper">
+
+		<div id="container" class="">
+
+			<h1 id="container_title">관리자메인</h1>
+			<div class="container_wr">
+				<section>
+					<h2>신규가입회원 5건 목록</h2>
+					<div class="local_desc02 local_desc">총회원수 2,221명 중 차단 0명, 탈퇴
+						: 34명</div>
+
+					<div class="tbl_head01 tbl_wrap">
+						<table>
+							<caption>신규가입회원</caption>
+							<thead>
+								<tr>
+									<th scope="col">회원아이디</th>
+									<th scope="col">이름</th>
+									<th scope="col">닉네임</th>
+									<th scope="col">권한</th>
+									<th scope="col">포인트</th>
+									<th scope="col">수신</th>
+									<th scope="col">공개</th>
+									<th scope="col">인증</th>
+									<th scope="col">차단</th>
+									<th scope="col">그룹</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="td_mbid">*****_********</td>
+									<td class="td_mbname">**********</td>
+									<td class="td_mbname sv_use"><div></div></td>
+									<td class="td_num">2</td>
+									<td><a
+										href="./point_list.php?sfl=mb_id&amp;stx=*****_********">1,005</a></td>
+									<td class="td_boolean">아니오</td>
+									<td class="td_boolean">아니오</td>
+									<td class="td_boolean">예</td>
+									<td class="td_boolean">아니오</td>
+									<td class="td_category"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+					<div class="btn_list03 btn_list">
+						<a href="./member_list.php">회원 전체보기</a>
+					</div>
+
+				</section>
+
+
+				<section>
+					<h2>최근게시물</h2>
+
+					<div class="tbl_head01 tbl_wrap">
+						<table>
+							<caption>최근게시물</caption>
+							<thead>
+								<tr>
+									<th scope="col">그룹</th>
+									<th scope="col">게시판</th>
+									<th scope="col">제목</th>
+									<th scope="col">이름</th>
+									<th scope="col">일시</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td class="td_category"><a
+										href="https://demo.sir.kr/gnuboard5/bbs/new.php?gr_id=shop">쇼핑몰</a></td>
+									<td class="td_category"><a
+										href="https://demo.sir.kr/gnuboard5/free">자유게시판</a></td>
+									<td><a href="https://demo.sir.kr/gnuboard5/free/hi/">hi</a></td>
+									<td class="td_mbname"><div>ㅇㄴㅇ</div></td>
+									<td class="td_datetime">2020-03-19</td>
+								</tr>
+
+
+
+								<tr>
+									<td class="td_category"><a
+										href="https://demo.sir.kr/gnuboard5/bbs/new.php?gr_id=shop">쇼핑몰</a></td>
+									<td class="td_category"><a
+										href="https://demo.sir.kr/gnuboard5/free">자유게시판</a></td>
+									<td><a href="https://demo.sir.kr/gnuboard5/free/1234-11/">1234</a></td>
+									<td class="td_mbname"><div>으아아앙</div></td>
+									<td class="td_datetime">2020-03-19</td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+
+					<div class="btn_list03 btn_list">
+						<a href="https://demo.sir.kr/gnuboard5/bbs/new.php">최근게시물 더보기</a>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>최근 포인트 발생내역</h2>
+					<div class="local_desc02 local_desc">전체 8,771 건 중 5건 목록</div>
+
+					<div class="tbl_head01 tbl_wrap">
+						<table>
+							<caption>최근 포인트 발생내역</caption>
+							<thead>
+								<tr>
+									<th scope="col">회원아이디</th>
+									<th scope="col">이름</th>
+									<th scope="col">닉네임</th>
+									<th scope="col">일시</th>
+									<th scope="col">포인트 내용</th>
+									<th scope="col">포인트</th>
+									<th scope="col">포인트합</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td class="td_mbid"><a
+										href="./point_list.php?sfl=mb_id&amp;stx=*****_********">*****_********</a></td>
+									<td class="td_mbname">**********</td>
+									<td class="td_name sv_use"><div>
+											<span class="sv_wrap"> <a
+												href="https://demo.sir.kr/gnuboard5/bbs/profile.php?mb_id=*****_********"
+												class="sv_member" title="********** 자기소개" target="_blank"
+												rel="nofollow"><span class="profile_img"> <!-- <img
+														src="https://demo.sir.kr/gnuboard5/img/no_profile.gif"
+														alt="no_profile" width="20" height="20"> --></span> **********</a>
+											</span>
+										</div></td>
+									<td class="td_datetime">2020-03-19 09:37:07</td>
+									<td>회원가입 축하</td>
+									<td class="td_numbig">1,000</td>
+									<td class="td_numbig">1,000</td>
+								</tr>
+
+
+
+								<tr>
+									<td class="td_mbid"><a
+										href="./point_list.php?sfl=mb_id&amp;stx=**********">**********</a></td>
+									<td class="td_mbname">**********</td>
+									<td class="td_name sv_use"><div>
+											<span class="sv_wrap"> <a
+												href="https://demo.sir.kr/gnuboard5/bbs/profile.php?mb_id=**********"
+												class="sv_member" title="********** 자기소개" target="_blank"
+												rel="nofollow"><span class="profile_img"><!-- <img
+														src="https://demo.sir.kr/gnuboard5/img/no_profile.gif"
+														alt="no_profile" width="20" height="20"> --></span> **********</a>
+
+
+											</span>
+										</div></td>
+									<td class="td_datetime">2020-03-19 09:16:26</td>
+									<td>쿠폰 RFYL-8QCM-3ZHV-NKZQ 발급</td>
+									<td class="td_numbig">-10,000</td>
+									<td class="td_numbig">2,147,483,647</td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+
+					<div class="btn_list03 btn_list">
+						<a href="./point_list.php">포인트내역 전체보기</a>
+					</div>
+				</section>
+
+
+
+			</div>
+
+
+			<footer id="ft">
+				<p>
+					Copyright © demo.sir.kr. All rights reserved. YoungCart Version
+					5.4.2.3<br>
+					<button type="button" class="scroll_top">
+						<span class="top_img"></span><span class="top_txt">TOP</span>
+					</button>
+				</p>
+			</footer>
+
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>

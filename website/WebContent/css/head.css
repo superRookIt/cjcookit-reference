@@ -1,0 +1,95 @@
+@charset "utf-8";
+/************************************************************************
+* filename : common.css
+* description : 공통 css
+************************************************************************/
+
+/* BASE */
+*{margin:0;padding:0;-webkit-text-size-adjust:none;word-break:break-all;box-sizing:border-box;}
+*, *:after, *:before {-webkit-box-sizing:border-box; box-sizing:border-box;}
+html{overflow-y:scroll;}
+html.laypop{overflow-y:scroll;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, table, th, td, input, select, textarea, button {margin:0;padding:0;word-break:break-all;letter-spacing:-0.5px;}
+body, input, textarea, select, button, table {font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', Dotum, '굴림', arial, sans-serif; font-size:15px; font-weight:400; line-height:23px;color:#606060;letter-spacing:-0.5px;}
+em {font-style:normal}
+fieldset, img {border:0 none}
+img  {vertical-align:middle}
+video {vertical-align:middle}
+dl, ul, ol, menu, li {list-style:none}
+input::-ms-clear {display:none}
+button {border:0 none; border-radius:0; background-color:transparent; cursor:pointer}
+a {color:inherit; text-decoration:none}
+a:hover,
+a:focus,
+a:active {background-color:transparent; text-decoration:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;margin:0;padding:0;}
+strong {font-weight:inherit;}
+
+
+/* FONT */
+h1,h2,h3,h4,h5,h6 {font-weight:normal}
+.h1_tit {font-size:76px; line-height:94px}
+.h2_tit {font-size:54px; line-height:70px}
+.h3_tit {font-size:36px; line-height:48px}
+.h4_tit {font-size:24px; line-height:36px}
+.h5_tit {font-size:24px; line-height:36px}
+.h6_tit {font-size:42px; line-height:56px}
+
+ 
+/* COLOR */
+.fc_lgreen {color:#BDD61A;}
+.fc_dgreen {color:#008A00;}
+.fc_red {color:#EE0700;}
+.fc_blue {color:#0379A6;}
+.fc_black {color:#101010;}
+.fc_gray {color:#606060;}
+
+/* align */
+.alignR {text-align:right;}
+
+
+/* FORM */
+input, select, textarea, button {vertical-align:middle;border:none;}
+input[type=text]::-ms-clear	{width:0;height:0;}
+label {vertical-align:middle}
+textarea {width:100%; border:0; overflow-y:auto; resize:none}
+
+
+/* LAYOUT - COMMON */
+#wrap{position:relative;width:100%;height:100%}
+#container{width:1180px;height:100%;margin:0 auto;}
+/* #content{min-height:900px; padding:72px 0 140px;} */
+#content{min-height:900px; padding:72px 0 140px;}
+
+
+/* LAYOUT - GNB */
+#head{width:100%;}
+#head:before{content:'';display:block;width:auto;}
+#head .gnb_wrap{min-width:1260px; margin:0 auto; background-color:#fff; border-bottom:1px solid #ccc; text-align: center;}
+#head .gnb_util {min-width:1260px; height:35px; padding-top:7px; background-color:#202020;text-align:left;}
+#head .gnb_util .util_wrap {max-width:1920px; min-width:1260px; margin:0 auto;}
+#head .gnb_util .util_wrap:after{content:'';display:table;clear:both;}
+#head .gnb_util ul {float:right; padding-right:40px}
+#head .gnb_util li {float:left;}
+#head .gnb_util li a {color:#fff; font-size:13px; line-height:21px;}
+#head .gnb_util li a:before {content:''; display:inline-block; position:relative; width:1px; height:12px; margin:0 12px; background-color:rgba(255, 255, 255, 0.2); vertical-align:middle;}
+#head .gnb_util li:first-child a:before {display:none;}
+#head .gnb_menu {position:relative; max-width:1920px; min-width:1260px; height:81px; margin:0 auto; padding-top:24px;  text-align:center}
+#head .gnb_menu .logo {position:absolute; left:40px; top:25px;}
+#head .gnb_menu .logo a {display:block; width:100px; height:30px; background:url('../image/ico_set.png') -320px -385px no-repeat; background-size:800px 800px;}
+#head .list_gmenu {display:inline-block; font-size:0; line-height:0}
+#head .list_gmenu li {display:inline-block; font-size:0; line-height:0}
+#head .list_gmenu li a {display:inline-block; padding:0 32px; color:#101010; font-weight:700; font-size:22px; line-height:32px;}
+#head .list_gmenu li .red_dot{position:relative;}
+#head .list_gmenu li .red_dot:before{content:'';position:absolute;top:0;right:0;width:6px;height:6px;background:#EE0700;border-radius:3px;}
+#head .my_gmenu {position:absolute; right:40px; top:14px;}
+#head .my_gmenu ul {float:right;}
+#head .my_gmenu li {float:left; margin-left:20px;}
+#head .my_gmenu li a {display:block;}
+#head .my_gmenu li a:before {content:'';display:block; width:32px; height:32px; margin:0 auto; background:url('../image/ico_set.png') no-repeat; background-size:800px 800px;}
+#head .my_gmenu li a .txt{display:block;margin-top:-2px;font-size:12px;line-height:20px;letter-spacing:-1px;color:#101010;}
+#head .my_gmenu li.g_od {position:relative;}
+#head .my_gmenu li.g_od .num {position:absolute; right:4px; top:-1px; width:16px; height:16px; border-radius:8px; background-color:#FF2727; color:#fff; font-weight:700; font-size:9px; line-height:16px; text-align:center}
+#head .my_gmenu li.g_my a:before {background-position:-540px -320px}
+#head .my_gmenu li.g_od a:before {background-position:-584px -320px}
+#head .my_gmenu li.g_mu a:before {background-position:-628px -320px}

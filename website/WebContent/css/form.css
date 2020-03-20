@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+
+* { margin: 0; padding: 0; vertical-align: baseline; 
+-webkit-text-size-adjust: 100%; 
+box-sizing: border-box; letter-spacing: -0.75px;}
+
+.inner-box, #gnb .gnb-inner { position: relative; width: 1200px; margin: 0 auto;}
+.faq .online_form { border-top: 2px solid #111; margin-bottom: 60px;}
+ol, ul { list-style: none;}
+.faq .online_form ul li { border-bottom: 1px solid #ddd;}
+.faq .online_form ul li > label { display: inline-block; position: relative; width: 250px; padding-left: 40px; font-size: 16px; padding-top: 48px; vertical-align: top; font-weight: 600;}
+.faq .online_form ul li > label span { color: #ff143c; margin-left: 2px;}
+.faq .online_form ul li > .form_group { display: inline-block; padding: 30px 0;}
+.faq .online_form ul li > .form_group .form_field { display: inline-block;}
+.faq .online_form ul li.form_name .form_item { width: 330px;}
+
+/* 타이틀 */
+.page-title-wrap{ position:relative; margin-bottom:30px;}
+.page-title { font-size: 40px; color: #111; font-weight: 400; text-align: center;}
+
+
+/* input */
+input[type="text"],
+input[type="file"],
+
+textarea{width:100%;border-radius:0;box-shadow:none;-webkit-appearance:none;border:1px solid #ddd;height:42px;box-sizing:border-box;padding:0 20px;font-size:15px;color:$CBlack2;letter-spacing:-0.2px;font-weight:500;font-family:"Roboto","Noto",sans-serif;}
+
+/* 폼파일 */
+.faq .online_form ul li > .form_group .i_error { font-size: 13px; color: #ff143c; margin-top: 12px; display: none;}
+
+.btn-wrap { width: 100%;margin-top: 30px; font-size: 0; text-align: center;}
+.btn-type{display: inline-block; position: relative; text-align: center;}
+
+.btn-type.v1 { width: 80px; font-weight: 400;float:right;margin-left: 7px; height: 62px; background: #ff143c; border: 1px solid #ff143c; color: #fff; font-size: 18px; line-height: 62px;}
+.btn-type.v4 { width: 220px; font-weight: 400; background: #222; border-color: #222;height:62px;border: 1px solid #ff143c; color: #fff; font-size: 18px; line-height: 62px;}
+.btn-type.v6 { width: 220px; font-weight: 400;margin-left: 12px; height: 62px; background: #ff143c; border: 1px solid #ff143c; color: #fff; font-size: 18px; line-height: 62px;}
+
+.faq .online_form ul li.form_add_file .form_file { margin-bottom: 20px;}
+.faq .online_form ul li.form_add_file .form_item { display: inline-block;}
+.faq .online_form ul li.form_add_file .form_item { width: 330px;}
+.faq .online_form ul li.form_add_file .ip_file { text-align: center; width: 120px; height: 42px; line-height: 42px; font-size: 16px; font-weight: 400; color: #ddd; background: #222; border-color: #222; display: inline-block; margin-left: 5px;}
+.faq .online_form ul li.form_add_file .ip_file input { position: absolute; top: 0; right: 0; width: 1px; z-index: -1; opacity: 0;}
+.faq .online_form ul li.form_add_file p { color: #888888;}
+.faq .online_form ul li > .form_group .form_field { display: inline-block; }
+.faq .online_form ul li > .form_group { display: inline-block; padding: 30px 0;}
+.faq .online_form ul li { border-bottom: 1px solid #ddd;}
+.faq .online_form { border-top: 2px solid #111; margin-bottom: 60px;}
+.faq .online_form ul li.form_write .form_field { width: 650px;}
+.faq .online_form ul li.form_write .form_field textarea { height: 295px; max-height: 295px; overflow-y: scroll;}
+
+
+
+
+
+
+
+
+
+
+
