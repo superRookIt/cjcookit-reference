@@ -1,0 +1,19 @@
+	<td><a href="#"
+								onclick="parent.open_box('loginhistory_pop.asp?MemCate=STUDENT&amp;MemSKU=ST_IT21512', 500, 600); return false;"><img
+									src="../image/btn_02.gif" title="로그인&nbsp;이력"></a></td>
+							<td>1</td>
+							<td>1</td>
+							<td><div class="BtnTBlack20 float_c">
+									<button type="button"
+										onclick="javascript:location.href='../class/class_reg.asp?PageName=chargeclass_reg&amp;RegType=StudentReg&amp;StudentSKU=ST_IT21512'">
+										<span>등록</span>
+									</button>
+								</div></td>
+							<td><div class="btn_modify"
+									onclick="student_list_Chk('Modify','ST_IT21512'); return false;"
+									title="수정하기"></div></td>
+							<td class="tdend"><div class="btn_del"
+									onclick="student_list_Chk('Del','ST_IT21512'); return false;"
+									title="삭제하기"></div></td>
+						</tr>
+           
